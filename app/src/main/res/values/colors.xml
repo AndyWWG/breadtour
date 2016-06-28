@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="transparent_background">#50000000</color>
+    <color name="guide_lastpage1_bg">#A7DCFB</color>
+    <color name="guide_lastpage2_bg">#BCDFA7</color>
+    <color name="guide_lastpage3_bg">#E8E5C5</color>
+    <color name="guide_lastpage4_bg">#A7DCFB</color>
+
+    <color name="bg_fragment">#F0F0F0</color>
+    <color name="ic_page_indicator">#01B4CA</color>
+    <color name="ic_page_indicator_focused">#88c9e9ea</color>
+
+</resources>

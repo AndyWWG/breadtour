@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_height="@dimen/dimension_fifty_dp">
+
+    <RadioGroup
+        android:id="@+id/activity_home_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/activity_home_rb_homepage"
+        style="@style/HomeCategory"
+        android:text="@string/homepage"
+        android:drawableTop="@drawable/recommend_selector"
+        android:textColor="@color/new_colors"
+        />
+
+    <RadioButton
+        android:id="@+id/activity_home_rb_single"
+        style="@style/HomeCategory"
+        android:text="@string/single"
+        android:textColor="@color/new_colors"
+        android:drawableTop="@drawable/find_selector"/>
+
+    <RadioButton
+
+        android:text="@string/match"
+        style="@style/HomeCategory"
+        android:background="@color/ic_page_indicator"
+        />
+
+    <RadioButton
+        android:id="@+id/activity_home_rb_school"
+        style="@style/HomeCategory"
+        android:text="@string/school"
+        android:textColor="@color/new_colors"
+        android:drawableTop="@drawable/message_selector"/>
+
+    <RadioButton
+        android:id="@+id/activity_home_rb_mine"
+        style="@style/HomeCategory"
+        android:text="@string/mine"
+        android:textColor="@color/new_colors"
+        android:drawableTop="@drawable/me_selector"/>
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+        <ImageView
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/btn_hunter_add"
+            />
+    </LinearLayout>
+</FrameLayout>
+

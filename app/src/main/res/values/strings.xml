@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">面包旅行</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="homepage">推荐</string>
+    <string name="single">发现</string>
+    <string name="match"></string>
+    <string name="school">消息</string>
+    <string name="mine">我的</string>
+    <string name="gengduo">更多</string>
+    <string name="zhongbangchuji">重磅出击</string>
+    <string name="zaixianhuodong">在线活动</string>
+    <string name="qian">$</string>
+    <string name="t1">全部</string>
+    <string name="t2">城市微旅行</string>
+    <string name="t3">本地生活</string>
+    <string name="t4">线上活动</string>
+    <string name="t5">经验分享</string>
+    <string name="t6">个性定制</string>
+    <string name="t7">占卜</string>
+    <string name="t8">摄影</string>
+
+
+</resources>
