@@ -21,6 +21,9 @@
     <string name="t6">个性定制</string>
     <string name="t7">占卜</string>
     <string name="t8">摄影</string>
-
+    <string name="xiaoxi_t1">最新动态</string>
+    <string name="xiaoxi_t2">系统通知</string>
+    <string name="xiaoxi_t3">欢迎加入面包旅行</string>
+    <string name="xiaoxi_t4">06号25月 02：19</string>
 
 </resources>

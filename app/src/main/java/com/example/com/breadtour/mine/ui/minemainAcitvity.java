@@ -1,7 +1,6 @@
 package com.example.com.breadtour.mine.ui;
 
 import com.example.com.breadtour.R;
-import com.example.com.breadtour.utils.ui.BaseActivity;
 import com.example.com.breadtour.utils.ui.BaseFragment;
 
 /**
@@ -9,17 +8,17 @@ import com.example.com.breadtour.utils.ui.BaseFragment;
  */
 public class minemainAcitvity extends BaseFragment {
     /**
-     * »ñÈ¡¶ÔÓ¦µÄ²¼¾ÖÎÄ¼þ
+     * ï¿½ï¿½È¡ï¿½ï¿½Ó¦ï¿½Ä²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½
      *
      * @return
      */
     @Override
     protected int getLayout() {
-        return R.layout.cardviewlayout;
+        return R.layout.activity_minemain;
     }
 
     /**
-     * ³õÊ¼»¯¿Ø¼þ
+     * ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½Ø¼ï¿½
      */
     @Override
     protected void initView() {
@@ -27,7 +26,7 @@ public class minemainAcitvity extends BaseFragment {
     }
 
     /**
-     * ³õÊ¼»¯Êý¾Ý
+     * ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     @Override
     protected void initData() {
@@ -35,7 +34,7 @@ public class minemainAcitvity extends BaseFragment {
     }
 
     /**
-     * ³õÊ¼»¯ÊÂ¼þ
+     * ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½Â¼ï¿½
      */
     @Override
     protected void initEvents() {

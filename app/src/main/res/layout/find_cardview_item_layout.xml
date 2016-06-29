@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/find_cardview"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    app:cardElevation="5dp"
+    app:cardMaxElevation="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.145"
+            android:gravity="center">
+
+            <com.example.com.breadtour.utils.ui.RoundAngleImageView
+                android:id="@+id/id_find_headimage"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/game"
+                android:scaleType="fitXY"
+                app:roundHeight="15dp"
+                app:roundWidth="15dp" />
+
+            <TextView
+                android:id="@+id/id_find_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/id_find_headimage"
+                android:text="心灵花园"
+                android:textColor="#0a0a0a"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/id_find_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/id_find_nickname"
+                android:text="分享活动" />
+
+            <TextView
+                android:id="@+id/id_find_share_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text="6小时前" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.44">
+
+            <ImageView
+                android:id="@+id/id_find_main_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@mipmap/foodie" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id_find_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="线上咨询：准到爆的星盘大师帮你深度解析生命主题"
+                android:textColor="#0a0909"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/id_find_site"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="远程"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/id_find_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:text="￥211"
+                    android:textColor="#EB5C3A"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E8E8E8" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.238"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id_find_invite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="发现这个活动不错哦，有小伙伴一起去吗？" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <com.example.com.breadtour.utils.ui.RoundAngleImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/bu"
+                    android:scaleType="fitXY"
+                    app:roundHeight="15dp"
+                    app:roundWidth="15dp" />
+
+                <com.example.com.breadtour.utils.ui.RoundAngleImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/bu"
+                    android:scaleType="fitXY"
+                    app:roundHeight="15dp"
+                    app:roundWidth="15dp" />
+
+                <com.example.com.breadtour.utils.ui.RoundAngleImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/bu"
+                    android:scaleType="fitXY"
+                    app:roundHeight="15dp"
+                    app:roundWidth="15dp" />
+
+                <com.example.com.breadtour.utils.ui.RoundAngleImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/bu"
+                    android:scaleType="fitXY"
+                    app:roundHeight="15dp"
+                    app:roundWidth="15dp" />
+
+                <com.example.com.breadtour.utils.ui.RoundAngleImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/bu"
+                    android:scaleType="fitXY"
+                    app:roundHeight="15dp"
+                    app:roundWidth="15dp" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/ic_great_user_more" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="7个人赞" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="60dp"
+                    android:background="#E8E8E8" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:scaleType="center"
+                    android:src="@mipmap/ic_comments" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

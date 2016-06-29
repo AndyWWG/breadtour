@@ -3,35 +3,35 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/ic_page_indicator"
-    android:minHeight="?attr/actionBarSize"
-   >
+    android:minHeight="?attr/actionBarSize">
+
     <TextView
         android:id="@+id/toolbar_num"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="left"
         android:layout_marginLeft="16dp"
-        android:text="北京"
         android:drawablePadding="12sp"
         android:drawableRight="@mipmap/btn_hide_poi"
+        android:text="北京"
         android:textColor="#f4f1f1"
         android:textSize="16dp" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textSize="@dimen/text_size_19_sp"
+        android:text="热门推荐"
         android:textColor="@color/guide_lastpage3_bg"
-        android:text="热门推荐"/>
+        android:textSize="@dimen/text_size_19_sp" />
 
     <ImageView
         android:id="@+id/toolbar_edit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
         android:layout_gravity="right"
         android:layout_marginRight="16dp"
         android:src="@mipmap/btn_hunter_normal"
-        android:textColor="#fff"
-       />
+        android:textColor="#fff" />
 
 </android.support.v7.widget.Toolbar>

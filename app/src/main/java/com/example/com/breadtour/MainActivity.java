@@ -1,6 +1,7 @@
 package com.example.com.breadtour;
 
 import android.app.AlertDialog;
+import android.app.Dialog;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
@@ -29,11 +30,14 @@ public class MainActivity extends BaseActivity {
     FragmentTransaction transaction;
     private ViewPager viewPager;
     FragmentPageradapter2 FragmentPageradapter;
-    private List<Fragment>  fragments;
+    private List<Fragment> fragments;
     private Animation manimation;
     private ImageView mimageView;
+    private ImageView mImageView;
+    private Dialog mDialog;
+
     /**
-     * »ñÈ¡¶ÔÓ¦µÄ²¼¾ÖÎÄ¼þ
+     * ï¿½ï¿½È¡ï¿½ï¿½Ó¦ï¿½Ä²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½
      *
      * @return
      */
@@ -43,24 +47,25 @@ public class MainActivity extends BaseActivity {
     }
 
     /**
-     * ³õÊ¼»¯¿Ø¼þ
+     * ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½Ø¼ï¿½
      */
     @Override
     protected void initView() {
-        fragments=new ArrayList<>();
+        fragments = new ArrayList<>();
         fragments.add(new recomendmainAcitvity());
         fragments.add(new findmainAcitvity());
         fragments.add(new meassagemainAcitvity());
         fragments.add(new minemainAcitvity());
-        viewPager= (ViewPager) findViewById(R.id.mianActivity_viewpager);
-        mradioGroup= (RadioGroup) findViewById(R.id.activity_home_radiogroup);
-        mimageView= (ImageView)findViewById(R.id.add);
-        FragmentPageradapter=new FragmentPageradapter2(getSupportFragmentManager(),fragments);
+        viewPager = (ViewPager) findViewById(R.id.mianActivity_viewpager);
+        mradioGroup = (RadioGroup) findViewById(R.id.activity_home_radiogroup);
+        mimageView = (ImageView) findViewById(R.id.add);
+        mImageView = (ImageView) findViewById(R.id.toolbar_edit);
+        FragmentPageradapter = new FragmentPageradapter2(getSupportFragmentManager(), fragments);
         viewPager.setAdapter(FragmentPageradapter);
     }
 
     /**
-     * ³õÊ¼»¯Êý¾Ý
+     * ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     @Override
     protected void initData() {
@@ -68,7 +73,7 @@ public class MainActivity extends BaseActivity {
     }
 
     /**
-     * ³õÊ¼»¯ÊÂ¼þ
+     * ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½Â¼ï¿½
      */
     @Override
     protected void initEvents() {
@@ -78,7 +83,7 @@ public class MainActivity extends BaseActivity {
                 switch (checkedId) {
                     case R.id.activity_home_rb_homepage:
                         viewPager.setCurrentItem(0, true);
-                        Log.i("dddd","ddddddd");
+                        Log.i("dddd", "ddddddd");
                         break;
                     case R.id.activity_home_rb_single:
                         viewPager.setCurrentItem(1, true);
@@ -89,7 +94,8 @@ public class MainActivity extends BaseActivity {
                     case R.id.activity_home_rb_mine:
                         viewPager.setCurrentItem(3, true);
                         break;
-            }}
+                }
+            }
         });
         mimageView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -102,6 +108,16 @@ public class MainActivity extends BaseActivity {
                 AlertDialog musicDialog = new AlertDialog.Builder(MainActivity.this, AlertDialog.BUTTON_POSITIVE).create();
                 musicDialog.setView(layout);
                 musicDialog.show();
+            }
+        });
+
+        mImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                View diaView = View.inflate(MainActivity.this, R.layout.activity_subject, null);
+                mDialog = new Dialog(MainActivity.this, R.style.DialogTransparent);
+                mDialog.setContentView(diaView);
+                mDialog.show();
             }
         });
     }

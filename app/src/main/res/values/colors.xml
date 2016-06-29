@@ -12,5 +12,7 @@
     <color name="bg_fragment">#F0F0F0</color>
     <color name="ic_page_indicator">#01B4CA</color>
     <color name="ic_page_indicator_focused">#88c9e9ea</color>
+    <color name="colorbuttom">#9C9C9C</color>
+    <color name="colorbuttom1">#FFFFFF</color>
 
 </resources>

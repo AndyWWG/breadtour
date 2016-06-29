@@ -29,8 +29,12 @@
     <dimen name="dimension_ninety_dp">90dp</dimen>
     <dimen name="dimension_ninety_five_dp">95dp</dimen>
     <dimen name="dimension_hundred_dp">100dp</dimen>
+    <dimen name="layout_marginLeft">5dp</dimen>
+    <dimen name="layout_marginTop">5dp</dimen>
+
 
     <!--自定义字体大小-->
+    <dimen name="text_buttom">20sp</dimen>
     <dimen name="text_size_8_sp">8sp</dimen>
     <dimen name="text_size_9_sp">9sp</dimen>
     <dimen name="text_size_10_sp">10sp</dimen>
