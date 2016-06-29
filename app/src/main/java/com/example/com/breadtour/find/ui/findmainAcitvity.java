@@ -30,9 +30,8 @@ public class findmainAcitvity extends BaseFragment {
     private List list;
     String url = "http://api.breadtrip.com/hunter/products/more/?start=0&lat=40.04806453249836&lng=116.29042647879027";
 
-
     /**
-     * ��ȡ��Ӧ�Ĳ����ļ�
+     * 获取对应的布局文件
      *
      * @return
      */
@@ -42,7 +41,7 @@ public class findmainAcitvity extends BaseFragment {
     }
 
     /**
-     * ��ʼ���ؼ�
+     * 初始化控件
      */
     @Override
     protected void initView() {
@@ -51,7 +50,7 @@ public class findmainAcitvity extends BaseFragment {
     }
 
     /**
-     * ��ʼ������
+     * 初始化数据
      */
     @Override
     protected void initData() {
@@ -77,7 +76,7 @@ public class findmainAcitvity extends BaseFragment {
     }
 
     /**
-     * ��ʼ���¼�
+     * 初始化事件
      */
     @Override
     protected void initEvents() {

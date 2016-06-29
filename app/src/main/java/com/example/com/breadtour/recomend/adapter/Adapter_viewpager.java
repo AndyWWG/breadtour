@@ -25,7 +25,7 @@ public class Adapter_viewpager extends PagerAdapter {
 
     @Override
     public int getCount() {
-        //ÉèÖÃ³É×î´ó£¬Ê¹ÓÃ»§¿´²»µ½±ß½ç
+        //ï¿½ï¿½ï¿½Ã³ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß½ï¿½
         return Integer.MAX_VALUE;
     }
 
@@ -37,25 +37,22 @@ public class Adapter_viewpager extends PagerAdapter {
     @Override
     public void destroyItem(ViewGroup container, int position,
                             Object object) {
-        //Warning£º²»ÒªÔÚÕâÀïµ÷ÓÃremoveView
     }
 
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
-        //¶ÔViewPagerÒ³ºÅÇóÄ£È¡³öViewÁĞ±íÖĞÒªÏÔÊ¾µÄÏî
         position %= viewlist.size();
         ImageView view = viewlist.get(position);
         view.setTag(position);
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(context, "ÕâÊÇµÚ¼¸ÕÅÍ¼Æ¬" + v.getTag(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, "5555" + v.getTag(), Toast.LENGTH_SHORT).show();
             }
         });
         if (position < 0) {
             position = viewlist.size() + position;
         }
-        //Èç¹ûViewÒÑ¾­ÔÚÖ®Ç°Ìí¼Óµ½ÁËÒ»¸ö¸¸×é¼ş£¬Ôò±ØĞëÏÈremove£¬·ñÔò»áÅ×³öIllegalStateException¡£
         ViewParent vp = view.getParent();
         if (vp != null) {
             ViewGroup parent = (ViewGroup) vp;

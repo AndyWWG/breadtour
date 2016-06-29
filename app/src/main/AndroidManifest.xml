@@ -30,9 +30,7 @@
         <activity android:name=".MainActivity">
 
         </activity>
-        <activity
-            android:name=".SubjectActivity"
-            android:theme="@style/DialogTransparent"></activity>
+        <activity android:name=".SubjectActivity"></activity>
         <activity android:name=".utils.ui.WelcomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -40,9 +38,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".utils.ui.WebviewActivity"></activity>
-        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote">
-        </service>
+        <activity android:name=".utils.ui.WebviewActivity" />
+        <activity android:name=".mine.Content_click.IcnHelpActivity" />
+        <activity android:name=".mine.Content_click.ImageSettings1Activity" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"></service>
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
             android:value="12CBgoIbQeKZRLQ4RezO9kcUDkzTSegU" />

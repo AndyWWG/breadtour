@@ -51,7 +51,7 @@ public class minemainAcitvity extends BaseFragment implements View.OnClickListen
 
      String url = "http://web.breadtrip.com/m/club/join_city_hunter/";
     /**
-     * ��ȡ��Ӧ�Ĳ����ļ�
+     * 获取对应的布局文件
      *
      * @return
      */
@@ -63,7 +63,7 @@ public class minemainAcitvity extends BaseFragment implements View.OnClickListen
     }
 
     /**
-     * ��ʼ���ؼ�
+     * 初始化控件
      */
     @Override
     protected void initView() {
@@ -109,7 +109,7 @@ public class minemainAcitvity extends BaseFragment implements View.OnClickListen
 
     }
     /**
-     * ��ʼ������
+     * 初始化数据
      */
     @Override
     protected void initData() {
@@ -117,7 +117,7 @@ public class minemainAcitvity extends BaseFragment implements View.OnClickListen
     }
 
     /**
-     * ��ʼ���¼�
+     * 初始化事件
      */
     @Override
     protected void initEvents() {

@@ -1,16 +1,22 @@
 package com.example.com.breadtour;
 
+import android.animation.ObjectAnimator;
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.graphics.drawable.BitmapDrawable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.PopupWindow;
 import android.widget.RadioGroup;
 
 import com.example.com.breadtour.find.ui.findmainAcitvity;
@@ -34,10 +40,16 @@ public class MainActivity extends BaseActivity {
     private Animation manimation;
     private ImageView mimageView;
     private ImageView mImageView;
+    private ImageView mImageViewDialog;
     private Dialog mDialog;
+    private int screenHeight;
+    private LinearLayout mMian;
+    private PopupWindow popupWindow;
+
+
 
     /**
-     * ��ȡ��Ӧ�Ĳ����ļ�
+     * 获取对应的布局文件
      *
      * @return
      */
@@ -47,10 +59,11 @@ public class MainActivity extends BaseActivity {
     }
 
     /**
-     * ��ʼ���ؼ�
+     * 初始化控件
      */
     @Override
     protected void initView() {
+        mInflater = LayoutInflater.from(MainActivity.this);
         fragments = new ArrayList<>();
         fragments.add(new recomendmainAcitvity());
         fragments.add(new findmainAcitvity());
@@ -60,20 +73,23 @@ public class MainActivity extends BaseActivity {
         mradioGroup = (RadioGroup) findViewById(R.id.activity_home_radiogroup);
         mimageView = (ImageView) findViewById(R.id.add);
         mImageView = (ImageView) findViewById(R.id.toolbar_edit);
+        mImageViewDialog = (ImageView) findViewById(R.id.dialog_image);
+        mMian = (LinearLayout) findViewById(R.id.main_layout);
         FragmentPageradapter = new FragmentPageradapter2(getSupportFragmentManager(), fragments);
         viewPager.setAdapter(FragmentPageradapter);
     }
 
     /**
-     * ��ʼ������
+     * 初始化数据
      */
     @Override
     protected void initData() {
 
     }
 
+
     /**
-     * ��ʼ���¼�
+     * 初始化事件
      */
     @Override
     protected void initEvents() {
@@ -97,29 +113,66 @@ public class MainActivity extends BaseActivity {
                 }
             }
         });
+
+        /**
+         * 中间+的点击事件
+         */
         mimageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 manimation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.add_anim);
                 manimation.setFillAfter(true);
                 v.startAnimation(manimation);
+                AlertDialog musicDialog = new AlertDialog.Builder(MainActivity.this, AlertDialog.BUTTON_POSITIVE).create();
                 mInflater = LayoutInflater.from(MainActivity.this);
                 View layout = mInflater.inflate(R.layout.activity_add, null);
-                AlertDialog musicDialog = new AlertDialog.Builder(MainActivity.this, AlertDialog.BUTTON_POSITIVE).create();
                 musicDialog.setView(layout);
                 musicDialog.show();
             }
         });
 
+
+        /**
+         * toolbar_edit的点击事件监听
+         */
         mImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                View diaView = View.inflate(MainActivity.this, R.layout.activity_subject, null);
-                mDialog = new Dialog(MainActivity.this, R.style.DialogTransparent);
-                mDialog.setContentView(diaView);
-                mDialog.show();
+                ObjectAnimator anim = ObjectAnimator.ofFloat(mMian, "scaleX", 1.0f, 0.9f);
+                ObjectAnimator anim2 = ObjectAnimator.ofFloat(mMian, "scaleY", 1.0f, 0.9f);
+                anim.setDuration(200);
+                anim2.setDuration(200);
+                anim.start();
+                anim2.start();
+                showPopupWindow();
             }
         });
     }
 
+
+    public void showPopupWindow() {
+        screenHeight = getWindowManager().getDefaultDisplay().getHeight();
+        View view = mInflater.inflate(R.layout.activity_subject, null);
+
+        popupWindow = new PopupWindow(view, WindowManager.LayoutParams.MATCH_PARENT, (int) (screenHeight * 0.85));
+        popupWindow.setFocusable(true);
+        popupWindow.setBackgroundDrawable(new BitmapDrawable());
+        popupWindow.setAnimationStyle(R.style.popWindow_animation);
+        // 在底部显示
+        popupWindow.showAtLocation(mMian, Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL, 0, 0);
+
+        popupWindow.setOnDismissListener(new PopupWindow.OnDismissListener() {
+            @Override
+            public void onDismiss() {
+                if (!popupWindow.isShowing()) {
+                    ObjectAnimator anim = ObjectAnimator.ofFloat(mMian, "scaleX", 0.9f, 1.0f);
+                    ObjectAnimator anim2 = ObjectAnimator.ofFloat(mMian, "scaleY", 0.9f, 1.0f);
+                    anim.setDuration(200);
+                    anim2.setDuration(200);
+                    anim.start();
+                    anim2.start();
+                }
+            }
+        });
+    }
 }

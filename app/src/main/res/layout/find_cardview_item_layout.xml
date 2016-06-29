@@ -149,6 +149,7 @@
                     android:layout_centerVertical="true"
                     android:background="@mipmap/bu"
                     android:scaleType="fitXY"
+                    android:visibility="gone"
                     app:roundHeight="15dp"
                     app:roundWidth="15dp" />
 
@@ -185,6 +186,7 @@
                     android:layout_centerVertical="true"
                     android:background="@mipmap/bu"
                     android:scaleType="fitXY"
+                    android:visibility="gone"
                     app:roundHeight="15dp"
                     app:roundWidth="15dp" />
 

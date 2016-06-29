@@ -2,292 +2,292 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
     android:orientation="vertical">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
         android:gravity="center"
         android:text="主题"
         android:textSize="25sp" />
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="10dp"
-        android:background="#EFEFEF" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="#EFEFEF" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/layout_marginTop"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <Button
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/shape"
-            android:text="全部"
-            android:textColor="@color/colorbuttom"
-            android:textSize="@dimen/text_buttom" />
+            android:layout_marginTop="@dimen/layout_marginTop"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:text="全部"
+                android:textColor="@color/colorbuttom"
+                android:textSize="@dimen/text_buttom" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft"
+                android:background="@drawable/shape"
+                android:text="技能get"
+                android:textColor="@color/colorbuttom"
+                android:textSize="@dimen/text_buttom" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft"
+                android:background="@drawable/shape"
+                android:text="时尚"
+                android:textColor="@color/colorbuttom"
+                android:textSize="@dimen/text_buttom" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_marginTop"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:text="亲子"
+                android:textColor="@color/colorbuttom"
+                android:textSize="@dimen/text_buttom" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft"
+                android:background="@drawable/shape"
+                android:text="城市探索"
+                android:textColor="@color/colorbuttom"
+                android:textSize="@dimen/text_buttom" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft"
+                android:background="@drawable/shape"
+                android:text="占卜"
+                android:textColor="@color/colorbuttom"
+                android:textSize="@dimen/text_buttom" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_marginTop"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:text="聚会"
+                android:textColor="@color/colorbuttom"
+                android:textSize="@dimen/text_buttom" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft"
+                android:background="@drawable/shape"
+                android:text="音乐"
+                android:textColor="@color/colorbuttom"
+                android:textSize="@dimen/text_buttom" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft"
+                android:background="@drawable/shape"
+                android:text="线上活动"
+                android:textColor="@color/colorbuttom"
+                android:textSize="@dimen/text_buttom" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_marginTop"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:text="经验分享"
+                android:textColor="@color/colorbuttom"
+                android:textSize="@dimen/text_buttom" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft"
+                android:background="@drawable/shape"
+                android:text="美食"
+                android:textColor="@color/colorbuttom"
+                android:textSize="@dimen/text_buttom" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft"
+                android:background="@drawable/shape"
+                android:text="绘画"
+                android:textColor="@color/colorbuttom"
+                android:textSize="@dimen/text_buttom" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_marginTop"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:text="运动健身"
+                android:textColor="@color/colorbuttom"
+                android:textSize="@dimen/text_buttom" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft"
+                android:background="@drawable/shape"
+                android:text="语音"
+                android:textColor="@color/colorbuttom"
+                android:textSize="@dimen/text_buttom" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft"
+                android:background="@drawable/shape"
+                android:text="目的地咨询"
+                android:textColor="@color/colorbuttom"
+                android:textSize="@dimen/text_buttom" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_marginTop"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:text="摄影"
+                android:textColor="@color/colorbuttom"
+                android:textSize="@dimen/text_buttom" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft"
+                android:background="@drawable/shape"
+                android:text="新奇特"
+                android:textColor="@color/colorbuttom"
+                android:textSize="@dimen/text_buttom" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft"
+                android:background="@drawable/shape"
+                android:text="明信片"
+                android:textColor="@color/colorbuttom"
+                android:textSize="@dimen/text_buttom" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_marginTop"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:text="手工制作"
+                android:textColor="@color/colorbuttom"
+                android:textSize="@dimen/text_buttom" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft"
+                android:background="@drawable/shape"
+                android:text="个性定制"
+                android:textColor="@color/colorbuttom"
+                android:textSize="@dimen/text_buttom" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft"
+                android:background="@drawable/shape"
+                android:text="户外"
+                android:textColor="@color/colorbuttom"
+                android:textSize="@dimen/text_buttom" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_marginTop"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:text="文化体验"
+                android:textColor="@color/colorbuttom"
+                android:textSize="@dimen/text_buttom" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="#EFEFEF" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/layout_marginLeft"
-            android:background="@drawable/shape"
-            android:text="技能get"
-            android:textColor="@color/colorbuttom"
+            android:layout_marginRight="@dimen/layout_marginLeft"
+            android:layout_marginTop="@dimen/layout_marginLeft"
+            android:background="@drawable/shape1"
+            android:text="确认"
+            android:textColor="@color/colorbuttom1"
             android:textSize="@dimen/text_buttom" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/layout_marginLeft"
-            android:background="@drawable/shape"
-            android:text="时尚"
-            android:textColor="@color/colorbuttom"
-            android:textSize="@dimen/text_buttom" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/layout_marginTop"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/shape"
-            android:text="亲子"
-            android:textColor="@color/colorbuttom"
-            android:textSize="@dimen/text_buttom" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/layout_marginLeft"
-            android:background="@drawable/shape"
-            android:text="城市探索"
-            android:textColor="@color/colorbuttom"
-            android:textSize="@dimen/text_buttom" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/layout_marginLeft"
-            android:background="@drawable/shape"
-            android:text="占卜"
-            android:textColor="@color/colorbuttom"
-            android:textSize="@dimen/text_buttom" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/layout_marginTop"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/shape"
-            android:text="聚会"
-            android:textColor="@color/colorbuttom"
-            android:textSize="@dimen/text_buttom" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/layout_marginLeft"
-            android:background="@drawable/shape"
-            android:text="音乐"
-            android:textColor="@color/colorbuttom"
-            android:textSize="@dimen/text_buttom" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/layout_marginLeft"
-            android:background="@drawable/shape"
-            android:text="线上活动"
-            android:textColor="@color/colorbuttom"
-            android:textSize="@dimen/text_buttom" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/layout_marginTop"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/shape"
-            android:text="经验分享"
-            android:textColor="@color/colorbuttom"
-            android:textSize="@dimen/text_buttom" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/layout_marginLeft"
-            android:background="@drawable/shape"
-            android:text="美食"
-            android:textColor="@color/colorbuttom"
-            android:textSize="@dimen/text_buttom" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/layout_marginLeft"
-            android:background="@drawable/shape"
-            android:text="绘画"
-            android:textColor="@color/colorbuttom"
-            android:textSize="@dimen/text_buttom" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/layout_marginTop"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/shape"
-            android:text="运动健身"
-            android:textColor="@color/colorbuttom"
-            android:textSize="@dimen/text_buttom" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/layout_marginLeft"
-            android:background="@drawable/shape"
-            android:text="语音"
-            android:textColor="@color/colorbuttom"
-            android:textSize="@dimen/text_buttom" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/layout_marginLeft"
-            android:background="@drawable/shape"
-            android:text="目的地咨询"
-            android:textColor="@color/colorbuttom"
-            android:textSize="@dimen/text_buttom" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/layout_marginTop"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/shape"
-            android:text="摄影"
-            android:textColor="@color/colorbuttom"
-            android:textSize="@dimen/text_buttom" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/layout_marginLeft"
-            android:background="@drawable/shape"
-            android:text="新奇特"
-            android:textColor="@color/colorbuttom"
-            android:textSize="@dimen/text_buttom" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/layout_marginLeft"
-            android:background="@drawable/shape"
-            android:text="明信片"
-            android:textColor="@color/colorbuttom"
-            android:textSize="@dimen/text_buttom" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/layout_marginTop"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/shape"
-            android:text="手工制作"
-            android:textColor="@color/colorbuttom"
-            android:textSize="@dimen/text_buttom" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/layout_marginLeft"
-            android:background="@drawable/shape"
-            android:text="个性定制"
-            android:textColor="@color/colorbuttom"
-            android:textSize="@dimen/text_buttom" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/layout_marginLeft"
-            android:background="@drawable/shape"
-            android:text="户外"
-            android:textColor="@color/colorbuttom"
-            android:textSize="@dimen/text_buttom" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/layout_marginTop"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/shape"
-            android:text="文化体验"
-            android:textColor="@color/colorbuttom"
-            android:textSize="@dimen/text_buttom" />
-
-    </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="10dp"
-        android:background="#EFEFEF" />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/layout_marginLeft"
-        android:layout_marginRight="@dimen/layout_marginLeft"
-        android:layout_marginTop="@dimen/layout_marginLeft"
-        android:background="@drawable/shape1"
-        android:text="确认"
-        android:textColor="@color/colorbuttom1"
-        android:textSize="@dimen/text_buttom" />
 
 </LinearLayout>

@@ -44,7 +44,7 @@ public class adapter_list3 extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         if(holder instanceof myViewHoledr1){
             myViewHoledr1.imageView.setImageResource(R.mipmap.a);
             myViewHoledr1.t2.setText("90");
-            myViewHoledr1.t1.setText("Ãæ°üÂÃÐÐ");
+            myViewHoledr1.t1.setText("å“ˆå•Šå“ˆå“ˆå“ˆå“ˆå“ˆ");
         }
     }
     @Override
