@@ -29,7 +29,7 @@ public class adapter_list5 extends RecyclerView.Adapter<RecyclerView.ViewHolder>
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType)  {
         if(viewType==0){
-            itemView=mInflater.inflate(R.layout.cardviewlayout,parent,false);
+            itemView=mInflater.inflate(R.layout.activity_index_gallery_item,parent,false);
             myViewHoledr1=new myViewHoledr1(itemView);
             return myViewHoledr1;
         }
@@ -42,10 +42,9 @@ public class adapter_list5 extends RecyclerView.Adapter<RecyclerView.ViewHolder>
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         if(holder instanceof myViewHoledr1){
-            myViewHoledr1.imageView1.setImageResource(R.mipmap.meinv);
-            myViewHoledr1.imageView2.setImageResource(R.mipmap.get_code_button);
-            myViewHoledr1.t2.setText("singer´ÞÑÅæµ");
-            myViewHoledr1.t1.setText("´ÓÐ¡Ñ§Ï°ÒôÀÖ,ÉÃ³¤popµÈ¶àÖÖÇú·ç");
+            myViewHoledr1.imageView.setImageResource(R.mipmap.a);
+            myViewHoledr1.t2.setText("90");
+            myViewHoledr1.t1.setText("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
         }
     }
     @Override
@@ -54,7 +53,7 @@ public class adapter_list5 extends RecyclerView.Adapter<RecyclerView.ViewHolder>
     }
 
 
-//    @Override
+    //    @Override
 //    public void onClick(View v) {
 //        if (setRecyclerOnClickListener!=null){
 //            setRecyclerOnClickListener.setRecyclerViewOnClickListener(v, (com.example.administrator.my36kr_news.untils.fragmentBean) v.getTag());
@@ -65,13 +64,12 @@ public class adapter_list5 extends RecyclerView.Adapter<RecyclerView.ViewHolder>
 //    }
     public class myViewHoledr1 extends RecyclerView.ViewHolder{
         TextView t1,t2;
-        ImageView imageView1,imageView2;
+        ImageView imageView;
         public myViewHoledr1(View itemView) {
             super(itemView);
-            t1= (TextView) itemView.findViewById(R.id.text_layout_no1);
-            t2= (TextView) itemView.findViewById(R.id.text_layout_no2);
-            imageView1= (ImageView) itemView.findViewById(R.id.image_layout);
-            imageView2= (ImageView) itemView.findViewById(R.id.image_layout_small);
+            t1= (TextView) itemView.findViewById(R.id.id_index_gallery_item_text);
+            t2= (TextView) itemView.findViewById(R.id.id_index_gallery_price_text);
+            imageView= (ImageView) itemView.findViewById(R.id.id_index_gallery_item_image);
         }
     }
 }

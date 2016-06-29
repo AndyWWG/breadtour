@@ -5,10 +5,16 @@ import android.support.v7.widget.OrientationHelper;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.widget.ImageView;
+import android.widget.Toast;
 
+import com.baidu.location.BDLocation;
+import com.example.com.breadtour.MainActivity;
 import com.example.com.breadtour.R;
 import com.example.com.breadtour.meassage.adapter.adapter_list_carview;
+import com.example.com.breadtour.utils.other.MyLocationListener;
+import com.example.com.breadtour.utils.other.OkHttpUtils;
 import com.example.com.breadtour.utils.ui.BaseFragment;
+import com.squareup.okhttp.OkHttpClient;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -56,6 +62,10 @@ public class meassagemainAcitvity extends BaseFragment {
         views.add(view5);
         mRecyclerView= (RecyclerView) root.findViewById(R.id.messagemain_recyclerview);
         setlist2();
+//        BDLocation mBDLocation=new BDLocation();
+//
+        ((MainActivity)(meassagemainAcitvity.this.getActivity())).mLocationClient.start();
+
     }
 
     /**
@@ -81,4 +91,5 @@ public class meassagemainAcitvity extends BaseFragment {
         mRecyclerView.setAdapter(madapter_list1);
         madapter_list1.notifyDataSetChanged();
     }
+
 }

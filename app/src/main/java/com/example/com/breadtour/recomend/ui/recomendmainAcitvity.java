@@ -14,6 +14,10 @@ import android.widget.RadioGroup;
 import com.example.com.breadtour.R;
 import com.example.com.breadtour.recomend.adapter.Adapter_viewpager;
 import com.example.com.breadtour.recomend.adapter.adapter_list1;
+import com.example.com.breadtour.recomend.adapter.adapter_list2;
+import com.example.com.breadtour.recomend.adapter.adapter_list3;
+import com.example.com.breadtour.recomend.adapter.adapter_list4;
+import com.example.com.breadtour.recomend.adapter.adapter_list5;
 import com.example.com.breadtour.recomend.adapter.adapter_viewpager_list2;
 import com.example.com.breadtour.recomend.entity.ImageHandler;
 import com.example.com.breadtour.utils.ui.BaseFragment;
@@ -40,13 +44,17 @@ public class recomendmainAcitvity extends BaseFragment {
     private ListView listView1;
     private LinearLayoutManager mLinearLayoutManager,mLinearLayoutManager_2,mLinearLayoutManager_3,mLinearLayoutManager_4,mLinearLayoutManager_5;
     private RecyclerView mRecyclerView,mRecyclerView_2,mRecyclerView_3,mRecyclerView_4,mRecyclerView_5;
-    private adapter_list1 madapter_list1,madapter_list1_2,madapter_list1_3,madapter_list1_4,madapter_list1_5;
+    private adapter_list1 madapter_list1;
+    private adapter_list2 madapter_list1_2;
+    private adapter_list3 madapter_list1_3;
+    private adapter_list4 madapter_list1_4;
+    private adapter_list5 madapter_list1_5;
     private View mView1, mView2;
     private List<View> mViewList2;
     private ViewPager mViewPager2;
 
     /**
-     * »ñÈ¡¶ÔÓ¦µÄ²¼¾ÖÎÄ¼þ
+     * ï¿½ï¿½È¡ï¿½ï¿½Ó¦ï¿½Ä²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½
      *
      * @return
      */
@@ -56,7 +64,7 @@ public class recomendmainAcitvity extends BaseFragment {
     }
 
     /**
-     * ³õÊ¼»¯¿Ø¼þ
+     * ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½Ø¼ï¿½
      */
     @Override
     protected void initView() {
@@ -72,11 +80,11 @@ public class recomendmainAcitvity extends BaseFragment {
     }
 
     /**
-     * ³õÊ¼»¯Êý¾Ý
+     * ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     @Override
     protected void initData() {
-        //Í·²¿ÂÖ²¥
+        //Í·ï¿½ï¿½ï¿½Ö²ï¿½
         views=new ArrayList<>();
         ImageView view4 = (ImageView)mInflater.inflate(R.layout.item_reomend_viewpager, null);
         ImageView view1 = (ImageView)mInflater.inflate(R.layout.item_reomend_viewpager, null);
@@ -95,7 +103,7 @@ public class recomendmainAcitvity extends BaseFragment {
         views.add(view5);
         mAdapter_viewpager=new Adapter_viewpager(views,getContext());
         mviewPager.setAdapter(mAdapter_viewpager);
-        //ºáÏò»¬¶¯
+        //ï¿½ï¿½ï¿½ò»¬¶ï¿½
         mLinearLayoutManager = new LinearLayoutManager(getActivity(), OrientationHelper.HORIZONTAL, false);
         mRecyclerView.setLayoutManager(mLinearLayoutManager);
         mRecyclerView.setHasFixedSize(true);
@@ -115,17 +123,17 @@ public class recomendmainAcitvity extends BaseFragment {
         setlist2();
         setlist3();
         setlist4();
-        setlist5();
+//        setlist5();
     }
 
     /**
-     * ³õÊ¼»¯ÊÂ¼þ
+     * ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½Â¼ï¿½
      */
     @Override
     protected void initEvents() {
         mviewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
 
-            //ÅäºÏAdapterµÄcurrentItem×Ö¶Î½øÐÐÉèÖÃ¡£
+            //ï¿½ï¿½ï¿½Adapterï¿½ï¿½currentItemï¿½Ö¶Î½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¡ï¿½
             @Override
             public void onPageSelected(int arg0) {
                 handler.sendMessage(Message.obtain(handler, ImageHandler.MSG_PAGE_CHANGED, arg0, 0));
@@ -134,7 +142,7 @@ public class recomendmainAcitvity extends BaseFragment {
             @Override
             public void onPageScrolled(int arg0, float arg1, int arg2) {
             }
-            //¸²Ð´¸Ã·½·¨ÊµÏÖÂÖ²¥Ð§¹ûµÄÔÝÍ£ºÍ»Ö¸´
+            //ï¿½ï¿½Ð´ï¿½Ã·ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½Ö²ï¿½Ð§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½Í»Ö¸ï¿½
             @Override
             public void onPageScrollStateChanged(int arg0) {
                 switch (arg0) {
@@ -149,15 +157,15 @@ public class recomendmainAcitvity extends BaseFragment {
                 }
             }
         });
-        mviewPager.setCurrentItem(Integer.MAX_VALUE/2);//Ä¬ÈÏÔÚÖÐ¼ä£¬Ê¹ÓÃ»§¿´²»µ½±ß½ç
-        //¿ªÊ¼ÂÖ²¥Ð§¹û
+        mviewPager.setCurrentItem(Integer.MAX_VALUE/2);//Ä¬ï¿½ï¿½ï¿½ï¿½ï¿½Ð¼ä£¬Ê¹ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß½ï¿½
+        //ï¿½ï¿½Ê¼ï¿½Ö²ï¿½Ð§ï¿½ï¿½
         handler.sendEmptyMessageDelayed(ImageHandler.MSG_UPDATE_IMAGE, ImageHandler.MSG_DELAY);
     }
     public void setlist2(){
         mLinearLayoutManager_2 = new LinearLayoutManager(getActivity(), OrientationHelper.HORIZONTAL, false);
         mRecyclerView_2.setLayoutManager(mLinearLayoutManager_2);
         mRecyclerView_2.setHasFixedSize(true);
-        madapter_list1_2=new adapter_list1(getContext(),views,0);
+        madapter_list1_2=new adapter_list2(getContext(),views,0);
         mRecyclerView_2.setAdapter(madapter_list1_2);
         madapter_list1_2.notifyDataSetChanged();
     }
@@ -165,7 +173,7 @@ public class recomendmainAcitvity extends BaseFragment {
         mLinearLayoutManager_3 = new LinearLayoutManager(getActivity(), OrientationHelper.HORIZONTAL, false);
         mRecyclerView_3.setLayoutManager(mLinearLayoutManager_3);
         mRecyclerView_3.setHasFixedSize(true);
-        madapter_list1_3=new adapter_list1(getContext(),views,0);
+        madapter_list1_3=new adapter_list3(getContext(),views,0);
         mRecyclerView_3.setAdapter(madapter_list1_3);
         madapter_list1_3.notifyDataSetChanged();
     }
@@ -173,16 +181,16 @@ public class recomendmainAcitvity extends BaseFragment {
         mLinearLayoutManager_4 = new LinearLayoutManager(getActivity(), OrientationHelper.HORIZONTAL, false);
         mRecyclerView_4.setLayoutManager(mLinearLayoutManager_4);
         mRecyclerView_4.setHasFixedSize(true);
-        madapter_list1_4=new adapter_list1(getContext(),views,0);
+        madapter_list1_4=new adapter_list4(getContext(),views,0);
         mRecyclerView_4.setAdapter(madapter_list1_4);
         madapter_list1_4.notifyDataSetChanged();
     }
-    public void setlist5(){
-        mLinearLayoutManager_5 = new LinearLayoutManager(getActivity(), OrientationHelper.HORIZONTAL, false);
-        mRecyclerView_5.setLayoutManager(mLinearLayoutManager_5);
-        mRecyclerView_5.setHasFixedSize(true);
-        madapter_list1_5=new adapter_list1(getContext(),views,0);
-        mRecyclerView_5.setAdapter(madapter_list1_5);
-        madapter_list1_5.notifyDataSetChanged();
-    }
+//    public void setlist5(){
+//        mLinearLayoutManager_5 = new LinearLayoutManager(getActivity(), OrientationHelper.HORIZONTAL, false);
+//        mRecyclerView_5.setLayoutManager(mLinearLayoutManager_5);
+//        mRecyclerView_5.setHasFixedSize(true);
+//        madapter_list1_5=new adapter_list5(getContext(),views,0);
+//        mRecyclerView_5.setAdapter(madapter_list1_5);
+//        madapter_list1_5.notifyDataSetChanged();
+//    }
 }

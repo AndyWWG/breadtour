@@ -18,5 +18,9 @@
         <include layout="@layout/activity_recomend_list1_3"></include>
         <include layout="@layout/activity_recomend_list1_4"></include>
         <include layout="@layout/activity_recomend_list3"></include>
+        <include layout="@layout/find_cardview_item_layout"></include>
+        <include layout="@layout/find_cardview_item_layout"></include>
+        <include layout="@layout/find_cardview_item_layout"></include>
+        <include layout="@layout/find_cardview_item_layout"></include>
     </LinearLayout>
 </ScrollView>
