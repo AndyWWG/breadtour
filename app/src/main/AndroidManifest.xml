@@ -2,19 +2,18 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.com.breadtour">
 
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity" />
         <activity
             android:name=".SubjectActivity"
-            android:theme="@style/DialogTransparent"></activity>
+            android:theme="@style/DialogTransparent" />
         <activity android:name=".utils.ui.WelcomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,7 +21,23 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".utils.ui.WebviewActivity"></activity>
+        <activity android:name=".utils.ui.WebviewActivity" />
+        <activity android:name=".mine.Content_click.CityHunterActivity" />
+        <activity android:name=".mine.Content_click.My_ImageActivity" />
+        <activity android:name=".mine.Content_click.ImageSettings1Activity" />
+        <activity android:name=".mine.Content_click.TxtLvActivity" />
+        <activity android:name=".mine.Content_click.MyNameActivity" />
+        <activity android:name=".mine.Content_click.MyConcernActivity" />
+        <activity android:name=".mine.Content_click.MyIntegralActivity" />
+        <activity android:name=".mine.Content_click.IcnOrderActivity" />
+        <activity android:name=".mine.Content_click.IcnCollectActivity" />
+        <activity android:name=".mine.Content_click.IcnCouponActivity" />
+        <activity android:name=".mine.Content_click.IcnEvaluateActivity" />
+        <activity android:name=".mine.Content_click.IcnStoryActivity" />
+        <activity android:name=".mine.Content_click.IcnInviteActivity" />
+        <activity android:name=".mine.Content_click.IcnPhoneActivity" />
+        <activity android:name=".mine.Content_click.IcnHelpActivity" />
+        <activity android:name=".mine.Content_click.WellLaiActivity" />
     </application>
 
 </manifest>
