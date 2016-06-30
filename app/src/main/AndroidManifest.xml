@@ -41,6 +41,19 @@
         <activity android:name=".utils.ui.WebviewActivity" />
         <activity android:name=".mine.Content_click.IcnHelpActivity" />
         <activity android:name=".mine.Content_click.ImageSettings1Activity" />
+        <activity android:name=".mine.Content_click.IcnCollectActivity" />
+        <activity android:name=".mine.Content_click.IcnCouponActivity" />
+        <activity android:name=".mine.Content_click.IcnEvaluateActivity" />
+        <activity android:name=".mine.Content_click.IcnInviteActivity" />
+        <activity android:name=".mine.Content_click.IcnOrderActivity" />
+        <activity android:name=".mine.Content_click.IcnPhoneActivity" />
+        <activity android:name=".mine.Content_click.IcnStoryActivity" />
+        <activity android:name=".mine.Content_click.My_ImageActivity" />
+        <activity android:name=".mine.Content_click.MyConcernActivity" />
+        <activity android:name=".mine.Content_click.MyIntegralActivity" />
+        <activity android:name=".mine.Content_click.MyNameActivity" />
+        <activity android:name=".mine.Content_click.TxtLvActivity" />
+        <activity android:name=".mine.Content_click.WellLaiActivity" />
 
         <service
             android:name="com.baidu.location.f"
