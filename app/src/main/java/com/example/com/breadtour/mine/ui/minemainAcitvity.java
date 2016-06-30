@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import com.example.com.breadtour.R;
@@ -49,7 +48,8 @@ public class minemainAcitvity extends BaseFragment implements View.OnClickListen
     private LinearLayout icn_help;
     private TextView well_lai;
 
-     String url = "http://web.breadtrip.com/m/club/join_city_hunter/";
+    String url = "http://www.baidu.com";
+
     /**
      * 获取对应的布局文件
      *
@@ -82,9 +82,9 @@ public class minemainAcitvity extends BaseFragment implements View.OnClickListen
         icn_evaluate = (LinearLayout) root.findViewById(R.id.icn_evaluate);
 
         icn_story = (LinearLayout) root.findViewById(R.id.icn_story);
-        icn_invite=(LinearLayout) root.findViewById(R.id.icn_invite);
-        icn_phone=(LinearLayout) root.findViewById(R.id.icn_phone);
-        icn_help=(LinearLayout) root.findViewById(R.id.icn_help);
+        icn_invite = (LinearLayout) root.findViewById(R.id.icn_invite);
+        icn_phone = (LinearLayout) root.findViewById(R.id.icn_phone);
+        icn_help = (LinearLayout) root.findViewById(R.id.icn_help);
         well_lai = (TextView) root.findViewById(R.id.well_lai);
 
         txt_city_hunter.setOnClickListener(this);
@@ -107,6 +107,7 @@ public class minemainAcitvity extends BaseFragment implements View.OnClickListen
         well_lai.setOnClickListener(this);
 
     }
+
     /**
      * 初始化数据
      */
@@ -128,8 +129,8 @@ public class minemainAcitvity extends BaseFragment implements View.OnClickListen
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.txt_city_hunter:
-            Intent intent = new Intent(minemainAcitvity.this.getActivity(), CityHunterActivity.class);
-            intent.putExtra("url",url);
+                Intent intent = new Intent(minemainAcitvity.this.getActivity(), CityHunterActivity.class);
+                intent.putExtra("url", url);
                 startActivity(intent);
                 break;
             case R.id.my_image:

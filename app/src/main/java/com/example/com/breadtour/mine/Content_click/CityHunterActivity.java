@@ -1,8 +1,7 @@
 package com.example.com.breadtour.mine.Content_click;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 import com.example.com.breadtour.R;
 import com.example.com.breadtour.utils.ui.BaseActivity;
@@ -26,12 +25,21 @@ public class CityHunterActivity extends BaseActivity {
     @Override
     protected void initData() {
 
-        mUrl = getIntent().getStringExtra("url");
-        mWebview.loadUrl(mUrl);
+
     }
 
     @Override
     protected void initEvents() {
+
+        mWebview.setWebViewClient(new WebViewClient() {
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                mUrl = getIntent().getStringExtra("url");
+                view.loadUrl(mUrl);
+//                view.getSettings().setJavaScriptEnabled(true);
+                return true;
+            }
+        });
 
     }
 }

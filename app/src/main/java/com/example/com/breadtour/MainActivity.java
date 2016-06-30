@@ -1,7 +1,6 @@
 package com.example.com.breadtour;
 
 import android.animation.ObjectAnimator;
-import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.drawable.BitmapDrawable;
@@ -14,13 +13,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.WindowManager;
 import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
+import com.example.com.breadtour.add.AddActivity;
 import com.example.com.breadtour.find.ui.findmainAcitvity;
 import com.example.com.breadtour.meassage.ui.meassagemainAcitvity;
 import com.example.com.breadtour.mine.ui.MyLogInActivity;
@@ -33,7 +32,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class MainActivity extends BaseActivity implements View.OnClickListener{
+public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     private RadioGroup mradioGroup;
     private LayoutInflater mInflater;
@@ -50,7 +49,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
     private LinearLayout mMian;
     private PopupWindow popupWindow;
     private RadioButton activity_home_rb_mine;
-
+    private int mCount;
 
 
     /**
@@ -129,14 +128,21 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
         mimageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                manimation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.add_anim);
-                manimation.setFillAfter(true);
-                v.startAnimation(manimation);
-                AlertDialog musicDialog = new AlertDialog.Builder(MainActivity.this, AlertDialog.BUTTON_POSITIVE).create();
-                mInflater = LayoutInflater.from(MainActivity.this);
-                View layout = mInflater.inflate(R.layout.activity_add, null);
-                musicDialog.setView(layout);
-                musicDialog.show();
+
+                ObjectAnimator anim = ObjectAnimator.ofFloat(v, "rotation", 0.0f, 45.0f);
+                anim.setDuration(200);
+                anim.start();
+                Intent intent = new Intent(MainActivity.this, AddActivity.class);
+                startActivity(intent);
+
+//                manimation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.add_anim);
+//                manimation.setFillAfter(true);
+//                v.startAnimation(manimation);
+//                AlertDialog musicDialog = new AlertDialog.Builder(MainActivity.this, AlertDialog.BUTTON_POSITIVE).create();
+//                mInflater = LayoutInflater.from(MainActivity.this);
+//                View layout = mInflater.inflate(R.layout.activity_add, null);
+//                musicDialog.setView(layout);
+//                musicDialog.show();
             }
         });
 
@@ -187,12 +193,25 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
+        switch (v.getId()) {
             case R.id.activity_home_rb_mine:
-                Intent intent = new Intent(MainActivity.this,MyLogInActivity.class);
+                Intent intent = new Intent(MainActivity.this, MyLogInActivity.class);
                 startActivity(intent);
                 break;
         }
 
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        ++mCount;
+        if (mCount == 1) {
+
+        } else if (mCount >= 2) {
+            ObjectAnimator anim = ObjectAnimator.ofFloat(mimageView, "rotation", 0.0f, 0.0f);
+            anim.setDuration(500);
+            anim.start();
+        }
     }
 }

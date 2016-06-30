@@ -64,13 +64,16 @@
             android:name="com.baidu.lbsapi.API_KEY"
             android:value="12CBgoIbQeKZRLQ4RezO9kcUDkzTSegU" />
 
-        <activity android:name=".mine.ui.MyLogInActivity" />
         <activity android:name=".mine.LogeIn_interfaces.WeixinLoginActivity" />
         <activity android:name=".mine.LogeIn_interfaces.SinaLoginActivity" />
         <activity android:name=".mine.LogeIn_interfaces.qqLoginActivity" />
         <activity android:name=".mine.LogeIn_interfaces.MobileLoginActivity" />
         <activity android:name=".mine.LogeIn_interfaces.EmailLoginActivity" />
-        <activity android:name=".mine.LogeIn_interfaces.Register_AccountsActivity"></activity>
+        <activity android:name=".mine.LogeIn_interfaces.Register_AccountsActivity" />
+        <activity
+            android:name=".add.AddActivity"
+            android:theme="@style/transcutestyle" />
+
     </application>
 
 </manifest>

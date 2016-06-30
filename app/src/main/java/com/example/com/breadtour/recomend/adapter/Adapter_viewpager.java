@@ -25,7 +25,6 @@ public class Adapter_viewpager extends PagerAdapter {
 
     @Override
     public int getCount() {
-        //���ó����ʹ�û��������߽�
         return Integer.MAX_VALUE;
     }
 
