@@ -54,6 +54,7 @@
         <activity android:name=".mine.Content_click.MyNameActivity" />
         <activity android:name=".mine.Content_click.TxtLvActivity" />
         <activity android:name=".mine.Content_click.WellLaiActivity" />
+        <activity android:name=".mine.Content_click.CityHunterActivity"/>
 
         <service
             android:name="com.baidu.location.f"
