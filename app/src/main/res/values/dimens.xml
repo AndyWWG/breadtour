@@ -53,4 +53,5 @@
     <dimen name="text_size_23_sp">23sp</dimen>
     <dimen name="text_size_24_sp">24sp</dimen>
     <dimen name="text_size_25_sp">25sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
 </resources>

@@ -87,7 +87,6 @@ public class minemainAcitvity extends BaseFragment implements View.OnClickListen
         icn_help=(LinearLayout) root.findViewById(R.id.icn_help);
         well_lai = (TextView) root.findViewById(R.id.well_lai);
 
-
         txt_city_hunter.setOnClickListener(this);
         my_image.setOnClickListener(this);
         image_settings_1.setOnClickListener(this);

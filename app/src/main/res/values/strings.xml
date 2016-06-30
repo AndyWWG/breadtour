@@ -25,5 +25,6 @@
     <string name="xiaoxi_t2">系统通知</string>
     <string name="xiaoxi_t3">欢迎加入面包旅行</string>
     <string name="xiaoxi_t4">06号25月 02：19</string>
+    <string name="title_activity_mine">MineActivity</string>
 
 </resources>

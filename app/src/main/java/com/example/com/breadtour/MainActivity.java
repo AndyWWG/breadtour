@@ -3,6 +3,7 @@ package com.example.com.breadtour;
 import android.animation.ObjectAnimator;
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.Intent;
 import android.graphics.drawable.BitmapDrawable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -17,10 +18,12 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
+import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 import com.example.com.breadtour.find.ui.findmainAcitvity;
 import com.example.com.breadtour.meassage.ui.meassagemainAcitvity;
+import com.example.com.breadtour.mine.ui.MyLogInActivity;
 import com.example.com.breadtour.mine.ui.minemainAcitvity;
 import com.example.com.breadtour.recomend.ui.recomendmainAcitvity;
 import com.example.com.breadtour.utils.adapter.FragmentPageradapter2;
@@ -30,7 +33,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class MainActivity extends BaseActivity {
+public class MainActivity extends BaseActivity implements View.OnClickListener{
+
     private RadioGroup mradioGroup;
     private LayoutInflater mInflater;
     FragmentTransaction transaction;
@@ -45,6 +49,7 @@ public class MainActivity extends BaseActivity {
     private int screenHeight;
     private LinearLayout mMian;
     private PopupWindow popupWindow;
+    private RadioButton activity_home_rb_mine;
 
 
 
@@ -59,7 +64,7 @@ public class MainActivity extends BaseActivity {
     }
 
     /**
-     * 初始化控件
+     * 初始化控件MyLogInActivuty
      */
     @Override
     protected void initView() {
@@ -77,6 +82,9 @@ public class MainActivity extends BaseActivity {
         mMian = (LinearLayout) findViewById(R.id.main_layout);
         FragmentPageradapter = new FragmentPageradapter2(getSupportFragmentManager(), fragments);
         viewPager.setAdapter(FragmentPageradapter);
+
+        activity_home_rb_mine = (RadioButton) findViewById(R.id.activity_home_rb_mine);
+        activity_home_rb_mine.setOnClickListener(this);
     }
 
     /**
@@ -107,9 +115,10 @@ public class MainActivity extends BaseActivity {
                     case R.id.activity_home_rb_school:
                         viewPager.setCurrentItem(2, true);
                         break;
-                    case R.id.activity_home_rb_mine:
+               /*     case R.id.activity_home_rb_mine:
                         viewPager.setCurrentItem(3, true);
                         break;
+                        */
                 }
             }
         });
@@ -174,5 +183,16 @@ public class MainActivity extends BaseActivity {
                 }
             }
         });
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.activity_home_rb_mine:
+                Intent intent = new Intent(MainActivity.this,MyLogInActivity.class);
+                startActivity(intent);
+                break;
+        }
+
     }
 }
