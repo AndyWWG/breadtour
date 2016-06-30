@@ -1,26 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
-    <LinearLayout
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="wrap_content">
+
+<android.support.design.widget.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    >
+    <android.support.v4.view.ViewPager
+        app:layout_scrollFlags="scroll"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:id="@+id/activity_recomend_viewpager"
+        >
+    </android.support.v4.view.ViewPager>
+    <include layout="@layout/activity_recomend_list1"></include>
+    <include layout="@layout/activity_recomend_list2"></include>
+    <include layout="@layout/activity_recomend_list1_2"></include>
+    <include layout="@layout/activity_recomend_list1_3"></include>
+    <include layout="@layout/activity_recomend_list1_4"></include>
+    <include layout="@layout/activity_recomend_list3"></include>
+    <include layout="@layout/activity_recomend_list4"></include>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <android.support.v4.view.ViewPager
-            android:layout_width="match_parent"
-            android:layout_height="170dp"
-            android:id="@+id/activity_recomend_viewpager"
-            >
-        </android.support.v4.view.ViewPager>
-        <include layout="@layout/activity_recomend_list1"></include>
-        <include layout="@layout/activity_recomend_list2"></include>
-        <include layout="@layout/activity_recomend_list1_2"></include>
-        <include layout="@layout/activity_recomend_list1_3"></include>
-        <include layout="@layout/activity_recomend_list1_4"></include>
-        <include layout="@layout/activity_recomend_list3"></include>
-        <include layout="@layout/find_cardview_item_layout"></include>
-        <include layout="@layout/find_cardview_item_layout"></include>
-        <include layout="@layout/find_cardview_item_layout"></include>
-        <include layout="@layout/find_cardview_item_layout"></include>
-    </LinearLayout>
-</ScrollView>
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+    </android.support.v7.widget.RecyclerView>
+</android.support.design.widget.CoordinatorLayout>
