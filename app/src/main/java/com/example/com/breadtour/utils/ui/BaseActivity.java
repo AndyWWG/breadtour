@@ -2,6 +2,7 @@ package com.example.com.breadtour.utils.ui;
 
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.WindowManager;
@@ -15,6 +16,9 @@ import com.baidu.location.LocationClientOption;
 import com.baidu.location.BDNotifyListener;//假如用到位置提醒功能，需要import该类
 import com.baidu.location.Poi;
 import com.example.com.breadtour.utils.other.MyLocationListener;
+import com.umeng.message.IUmengRegisterCallback;
+import com.umeng.message.MsgConstant;
+import com.umeng.message.PushAgent;
 
 import java.util.List;
 
@@ -22,10 +26,34 @@ import java.util.List;
  * Activity基类
  */
 public abstract class BaseActivity extends AppCompatActivity {
+    PushAgent mPushAgent;
+    public Handler handler = new Handler();
 
+    //此处是注册的回调处理
+    //参考集成文档的1.7.10
+    //http://dev.umeng.com/push/android/integration#1_7_10
+    public IUmengRegisterCallback mRegisterCallback = new IUmengRegisterCallback() {
+
+        @Override
+        public void onRegistered( final String registrationId) {
+            // TODO Auto-generated method stub
+            handler.post(new Runnable() {
+
+                @Override
+                public void run() {
+                    // TODO Auto-generated method stub
+                    Log.d("device_token", registrationId);
+                }
+            });
+        }
+    };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        mPushAgent = PushAgent.getInstance(this);
+        mPushAgent.setNotificationPlaySound(MsgConstant.NOTIFICATION_PLAY_SDK_ENABLE);
+        mPushAgent.onAppStart();
+        mPushAgent.enable(mRegisterCallback);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             //透明状态栏
             getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);

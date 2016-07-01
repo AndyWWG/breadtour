@@ -70,9 +70,19 @@
         <activity android:name=".mine.LogeIn_interfaces.MobileLoginActivity" />
         <activity android:name=".mine.LogeIn_interfaces.EmailLoginActivity" />
         <activity android:name=".mine.LogeIn_interfaces.Register_AccountsActivity" />
-        <activity
-            android:name=".add.AddActivity"
-            android:theme="@style/transcutestyle" />
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5774cc1d67e58eb1e4003597" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="4e1a4d269e5a4b056649b0e853e28407" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="aa123" >
+        </meta-data>
+
 
     </application>
 
