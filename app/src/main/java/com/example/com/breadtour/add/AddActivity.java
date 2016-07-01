@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.example.com.breadtour.R;
 
@@ -26,7 +25,10 @@ public class AddActivity extends Activity {
         mImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(AddActivity.this.getApplicationContext(),"你好吗？",Toast.LENGTH_SHORT).show();
+//                Intent intent = new Intent(AddActivity.this, MainActivity.class);
+//                startActivity(intent);
+                finish();
+//                Toast.makeText(AddActivity.this.getApplicationContext(), "你好吗？", Toast.LENGTH_SHORT).show();
 
             }
         });

@@ -65,7 +65,7 @@ public class findmainAcitvity extends BaseFragment {
             @Override
             public void onItemClick(View view, meassagebean.ProductListBean meassagebean, int position) {
                 Intent intent = new Intent(findmainAcitvity.this.getContext(), WebviewActivity.class);
-                intent.putExtra("url", meassagebean.getUser().getAvatar_l());
+                intent.putExtra("id", Long.toString(meassagebean.getUser().getId()));
                 startActivity(intent);
             }
         });

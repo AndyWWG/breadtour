@@ -38,7 +38,7 @@ public class adapter_list4 extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         View itemView;
         if (viewType == 0) {
             itemView = mInflater.inflate(R.layout.activity_index_gallery_item, parent, false);
-            myViewHoledr1 = new myViewHoledr1(itemView);;
+            myViewHoledr1 = new myViewHoledr1(itemView);
             return myViewHoledr1;
         }
         return null;

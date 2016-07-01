@@ -7,7 +7,6 @@ import android.graphics.drawable.BitmapDrawable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -106,7 +105,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 switch (checkedId) {
                     case R.id.activity_home_rb_homepage:
                         viewPager.setCurrentItem(0, true);
-                        Log.i("dddd", "ddddddd");
+//                        Log.i("dddd", "ddddddd");
                         break;
                     case R.id.activity_home_rb_single:
                         viewPager.setCurrentItem(1, true);
@@ -129,8 +128,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             @Override
             public void onClick(View v) {
 
-                ObjectAnimator anim = ObjectAnimator.ofFloat(v, "rotation", 0.0f, 45.0f);
-                anim.setDuration(200);
+                ObjectAnimator anim = ObjectAnimator.ofFloat(v, "rotation", 0.0f, 135.0f);
+                anim.setDuration(500);
                 anim.start();
                 Intent intent = new Intent(MainActivity.this, AddActivity.class);
                 startActivity(intent);

@@ -17,28 +17,32 @@ import java.util.List;
 /**
  * Created by Administrator on 2016/6/28 0028.
  */
-public class adapter_list3 extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
+public class adapter_list3 extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private List<cityBean.ProductListBean> list;
     private LayoutInflater mInflater;
     private myViewHoledr1 myViewHoledr1;
     private int mTyep;
 
     private Context context;
-    private  RecyclerOnClickListener mRecyclerOnClickListener;
+    private RecyclerOnClickListener mRecyclerOnClickListener;
+
     public adapter_list3(Context context, int Tyep) {
         mInflater = LayoutInflater.from(context);
-        this.context=context;
+        this.context = context;
         this.mTyep = Tyep;
     }
+
     public void setList(List list) {
         this.list = list;
     }
+
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView;
         if (viewType == 0) {
             itemView = mInflater.inflate(R.layout.activity_index_gallery_item, parent, false);
-            myViewHoledr1 = new myViewHoledr1(itemView);;
+            myViewHoledr1 = new myViewHoledr1(itemView);
+            ;
             return myViewHoledr1;
         }
         return null;
@@ -58,7 +62,7 @@ public class adapter_list3 extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             holder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    if (mRecyclerOnClickListener!=null){
+                    if (mRecyclerOnClickListener != null) {
                         mRecyclerOnClickListener.setRecyclerViewOnClickListener(v, list.get(position), position);
                     }
                 }
@@ -75,9 +79,11 @@ public class adapter_list3 extends RecyclerView.Adapter<RecyclerView.ViewHolder>
     public void setOnItemClickListener(RecyclerOnClickListener listener) {
         this.mRecyclerOnClickListener = listener;
     }
-    public  static interface  RecyclerOnClickListener{
-        void setRecyclerViewOnClickListener(View view,cityBean.ProductListBean fragmentBean,int position);
+
+    public static interface RecyclerOnClickListener {
+        void setRecyclerViewOnClickListener(View view, cityBean.ProductListBean fragmentBean, int position);
     }
+
     public class myViewHoledr1 extends RecyclerView.ViewHolder {
         TextView t1, t2;
         ImageView imageView;

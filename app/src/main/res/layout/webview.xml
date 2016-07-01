@@ -1,11 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#4ABDCC">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_layout_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/userinfo_back_normal" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="活动详情"
+                android:layout_toRightOf="@+id/image_layout_back"
+                android:layout_centerInParent="true"
+                android:textColor="#ffff" />
+
+            <ImageView
+                android:id="@+id/image_layout_rigth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/btn_web_share_normal" />
+            <ImageView
+                android:layout_toLeftOf="@+id/image_layout_rigth"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/btn_spot_liked_normal"
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
 
     <WebView
         android:id="@+id/find_webview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></WebView>
+        android:layout_height="match_parent" />
 
 </LinearLayout>
