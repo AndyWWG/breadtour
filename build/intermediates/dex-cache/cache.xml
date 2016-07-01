@@ -96,7 +96,7 @@
         jar="D:\breadtour\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="35b08ce14242291f60fab24ca9c8f2cdca3cd9a7">
+        sha1="92baddfa2144efa72800407d3b5d37f321a46260">
         <dex dex="D:\breadtour\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_e21bacaf49a42918ba79ea3cc4d1104cfa9fa6bd.jar" />
     </item>
     <item
@@ -238,13 +238,6 @@
         revision="23.0.3"
         sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
         <dex dex="D:\breadtour\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_9dcc3f18631726865dfc2f2439254de739a2f2a7.jar" />
-    </item>
-    <item
-        jar="D:\breadtour\app\src\main\libs\locSDK_6.13.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="2cdb37444b41b42e1ce5a8a27e5d3c22e1c57479">
-        <dex dex="D:\breadtour\app\build\intermediates\pre-dexed\debug\locSDK_6.13_5592db103136a8ffa0ad94e4aa3037232f996611.jar" />
     </item>
     <item
         jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.immutables\gson\2.2.6\281df0c164eeeb77e2402a6de20a9c139a97c44c\gson-2.2.6.jar"

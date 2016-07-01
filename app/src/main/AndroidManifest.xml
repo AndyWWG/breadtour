@@ -20,20 +20,6 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <!-- SD卡读取权限，用户写入离线定位数据 -->
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_LOGS" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.GET_TASKS" />
-    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
-    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
-    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
-    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
 
     <application
         android:name=".utils.ui.App"
@@ -69,12 +55,29 @@
         <activity android:name=".mine.Content_click.WellLaiActivity" />
         <activity android:name=".mine.Content_click.CityHunterActivity" />
         <activity android:name=".mine.ui.MyLogInActivity" />
-        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote">
-        </service>
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+        <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.READ_LOGS" />
+        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+        <uses-permission android:name="android.permission.GET_TASKS" />
+        <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+        <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+        <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+        <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+        <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
 
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
-            android:value="0iFSlCLOZeW6P6ovGV6PVxBLC5a0cjQG" />
+            android:value="12CBgoIbQeKZRLQ4RezO9kcUDkzTSegU" />
 
         <activity android:name=".mine.LogeIn_interfaces.WeixinLoginActivity" />
         <activity android:name=".mine.LogeIn_interfaces.SinaLoginActivity" />
@@ -120,7 +123,6 @@
             android:windowSoftInputMode="adjustResize"
             android:exported="false" >
         </activity>
-
         <activity
             android:name="com.tencent.tauth.AuthActivity"
             android:launchMode="singleTask"
