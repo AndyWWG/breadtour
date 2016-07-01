@@ -13,6 +13,7 @@
         android:layout_marginLeft="16dp"
         android:drawablePadding="12sp"
         android:drawableRight="@mipmap/btn_hide_poi"
+        android:onClick="beijin"
         android:text="北京"
         android:textColor="#f4f1f1"
         android:textSize="16dp" />

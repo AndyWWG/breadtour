@@ -1,9 +1,11 @@
 package com.example.com.breadtour;
 
+import android.Manifest;
 import android.animation.ObjectAnimator;
 import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.drawable.BitmapDrawable;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
@@ -12,11 +14,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.WindowManager;
 import android.view.animation.Animation;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.com.breadtour.add.AddActivity;
 import com.example.com.breadtour.find.ui.findmainAcitvity;
@@ -26,6 +31,11 @@ import com.example.com.breadtour.mine.ui.minemainAcitvity;
 import com.example.com.breadtour.recomend.ui.recomendmainAcitvity;
 import com.example.com.breadtour.utils.adapter.FragmentPageradapter2;
 import com.example.com.breadtour.utils.ui.BaseActivity;
+import com.umeng.socialize.ShareAction;
+import com.umeng.socialize.UMShareAPI;
+import com.umeng.socialize.UMShareListener;
+import com.umeng.socialize.bean.SHARE_MEDIA;
+import com.umeng.socialize.editorpage.ShareActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -49,6 +59,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     private PopupWindow popupWindow;
     private RadioButton activity_home_rb_mine;
     private int mCount;
+    private TextView textView;
 
 
     /**
@@ -66,12 +77,23 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
      */
     @Override
     protected void initView() {
+        String[] mPermissionList = new String[]{Manifest.permission.ACCESS_FINE_LOCATION
+                ,Manifest.permission.CALL_PHONE
+                ,Manifest.permission.READ_LOGS
+                ,Manifest.permission.READ_PHONE_STATE
+                , Manifest.permission.WRITE_EXTERNAL_STORAGE
+                ,Manifest.permission.SET_DEBUG_APP
+                , Manifest.permission.SYSTEM_ALERT_WINDOW
+                ,Manifest.permission.GET_ACCOUNTS};
+        ActivityCompat.requestPermissions(MainActivity.this,mPermissionList, 100);
+        Toast.makeText(MainActivity.this , mPermissionList.length+"",Toast.LENGTH_SHORT).show();
         mInflater = LayoutInflater.from(MainActivity.this);
         fragments = new ArrayList<>();
         fragments.add(new recomendmainAcitvity());
         fragments.add(new findmainAcitvity());
         fragments.add(new meassagemainAcitvity());
         fragments.add(new minemainAcitvity());
+        textView= (TextView) findViewById(R.id.toolbar_num);
         viewPager = (ViewPager) findViewById(R.id.mianActivity_viewpager);
         mradioGroup = (RadioGroup) findViewById(R.id.activity_home_radiogroup);
         mimageView = (ImageView) findViewById(R.id.add);
@@ -144,6 +166,39 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 //                musicDialog.show();
             }
         });
+      final  UMShareListener UMShareListener=new UMShareListener() {
+            @Override
+            public void onResult(SHARE_MEDIA platform) {
+                Toast.makeText(MainActivity.this,platform + " 分享成功啦", Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onError(SHARE_MEDIA platform, Throwable t) {
+                Toast.makeText(MainActivity.this,platform + " 分享失败啦", Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onCancel(SHARE_MEDIA platform) {
+                Toast.makeText(MainActivity.this,platform + " 分享取消了", Toast.LENGTH_SHORT).show();
+            }
+        };
+
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SHARE_MEDIA[] displaylist = new SHARE_MEDIA[]
+                        {
+                                SHARE_MEDIA.WEIXIN, SHARE_MEDIA.WEIXIN_CIRCLE,SHARE_MEDIA.SINA,
+                                SHARE_MEDIA.QQ, SHARE_MEDIA.QZONE,
+                        };
+                new ShareAction(MainActivity.this).setDisplayList( displaylist )
+                        .withText( "呵呵" )
+                        .withTitle("title")
+                        .withTargetUrl("http://www.baidu.com")
+                        .setListenerList(UMShareListener)
+                        .open();
+            }
+        });
 
 
         /**
@@ -191,6 +246,12 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     }
 
     @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        UMShareAPI.get( this ).onActivityResult( requestCode, resultCode, data);
+    }
+
+    @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.activity_home_rb_mine:
@@ -213,4 +274,5 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             anim.start();
         }
     }
+
 }
