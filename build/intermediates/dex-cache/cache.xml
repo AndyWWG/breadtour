@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\breadtour\app\src\main\libs\SocialSDK_tencentWB_1.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="328c5351cae13f2ab29450d22b6c02d0ac88a855">
+        <dex dex="D:\breadtour\app\build\intermediates\pre-dexed\debug\SocialSDK_tencentWB_1_12cfdc432cb0fbcb2902fdc34ac96ad542301faa.jar" />
+    </item>
+    <item
+        jar="D:\breadtour\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="D:\breadtour\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.4.0_df3d8e3cb761c45a768004bf4a3d879ccf55e327.jar" />
+    </item>
+    <item
+        jar="D:\breadtour\app\src\main\libs\SocialSDK_QQZone_3.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="666c505ae69803049cd3fbd22347d56ab0047ce5">
+        <dex dex="D:\breadtour\app\build\intermediates\pre-dexed\debug\SocialSDK_QQZone_3_0e9c62bca927dca63d271b0e373094df9017b071.jar" />
+    </item>
+    <item
+        jar="D:\breadtour\app\src\main\libs\SocialSDK_WeiXin_2.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4c5dd052d074b0d96e805bc12a935c9793641dbe">
+        <dex dex="D:\breadtour\app\build\intermediates\pre-dexed\debug\SocialSDK_WeiXin_2_0fdcf9c7c90074a9eb948df047e4423bc8b38b3b.jar" />
+    </item>
+    <item
+        jar="D:\breadtour\app\src\main\libs\SocialSDK_Sina.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="030390d125e0980b66973844d2cfa27b59c3e7bf">
+        <dex dex="D:\breadtour\app\build\intermediates\pre-dexed\debug\SocialSDK_Sina_7e1c449756382db7cc51f900baf6b922a7c65bef.jar" />
+    </item>
+    <item
+        jar="D:\breadtour\app\src\main\libs\weiboSDKCore_3.1.4.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f3617ce51258bf3ec0fe2503e3c0a920040b1b53">
+        <dex dex="D:\breadtour\app\build\intermediates\pre-dexed\debug\weiboSDKCore_3.1.4_f4d695fb1150ba14ef43fe46d7f6cf888e3f3f0f.jar" />
+    </item>
+    <item
+        jar="D:\breadtour\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="D:\breadtour\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.4.0_5a4002cc6b4e1cf921d05fbbf7e6dfd15b7c5320.jar" />
+    </item>
+    <item
+        jar="D:\breadtour\app\src\main\libs\BaiduLBS_Android.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="375dd326bfb424db5f1a03738cc7413a211948b8">
+        <dex dex="D:\breadtour\app\build\intermediates\pre-dexed\debug\BaiduLBS_Android_5e477b5963a054a66606a7cca289710af5085ad4.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.readystatesoftware.systembartint\systembartint\1.0.3\de4f7404e2f58d8f6e83cb1e85d0c2d6c2987287\systembartint-1.0.3.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="de4f7404e2f58d8f6e83cb1e85d0c2d6c2987287">
+        <dex dex="D:\breadtour\app\build\intermediates\pre-dexed\debug\systembartint-1.0.3_737be33c92afa3d651417584f62e561120fe5e0c.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.squareup.wire\wire-runtime\2.1.2\fcaa443f7b6ad5f2d9b6a68c55972a366aaac5a\wire-runtime-2.1.2.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="0fcaa443f7b6ad5f2d9b6a68c55972a366aaac5a">
+        <dex dex="D:\breadtour\app\build\intermediates\pre-dexed\debug\wire-runtime-2.1.2_d0340976fd02a9eee41f6e7218093f6c5bc61d2a.jar" />
+    </item>
+    <item
+        jar="D:\breadtour\app\src\main\libs\SocialSDK_tencentWB_2.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="6f744074067eb201171c9c8ff1ca45ed821a76a8">
+        <dex dex="D:\breadtour\app\build\intermediates\pre-dexed\debug\SocialSDK_tencentWB_2_7559b3586c647a3205b7cebce06296e4481555fb.jar" />
+    </item>
+    <item
+        jar="D:\breadtour\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
+        <dex dex="D:\breadtour\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-23.4.0_9cf9dd895d85fee8e77e62fa380eeda4a47799cf.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="D:\breadtour\app\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_c9fae43cda2e1c04b2ab0de43a8f148b5b1a92fa.jar" />
+    </item>
+    <item
+        jar="D:\breadtour\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="35b08ce14242291f60fab24ca9c8f2cdca3cd9a7">
+        <dex dex="D:\breadtour\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_e21bacaf49a42918ba79ea3cc4d1104cfa9fa6bd.jar" />
+    </item>
+    <item
+        jar="D:\breadtour\app\src\main\libs\SocialSDK_WeiXin_1.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="47f4993168154fa73377d7470b9f6887d48a8023">
+        <dex dex="D:\breadtour\app\build\intermediates\pre-dexed\debug\SocialSDK_WeiXin_1_223b1a9fcaff975ec2f07a5b7d00505d2bb1ad5f.jar" />
+    </item>
+    <item
+        jar="D:\breadtour\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="D:\breadtour\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.4.0_ed60dc18bdceb34e09de9d7b58ff204ef94d5213.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp\okhttp\2.7.5\7a15a7db50f86c4b64aa3367424a60e3a325b8f1\okhttp-2.7.5.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="7a15a7db50f86c4b64aa3367424a60e3a325b8f1">
+        <dex dex="D:\breadtour\app\build\intermediates\pre-dexed\debug\okhttp-2.7.5_5414a657ed49794aadf3035440f5bfb3280277c2.jar" />
+    </item>
+    <item
+        jar="D:\breadtour\app\src\main\libs\open_sdk_r5509.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="538ea8fb21ea76e8cb424598ac38127cb3344d79">
+        <dex dex="D:\breadtour\app\build\intermediates\pre-dexed\debug\open_sdk_r5509_cb0b82c755b98de3b7de31e865198a2e40f97a39.jar" />
+    </item>
+    <item
+        jar="D:\breadtour\app\src\main\libs\mta-sdk-1.6.2.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="c184c69f43b1fe46390f7123717c65bd844bccb6">
+        <dex dex="D:\breadtour\app\build\intermediates\pre-dexed\debug\mta-sdk-1.6.2_8526cadc69a6ad8d94fc68e9f0455a2d7cb699b5.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.greenrobot\eventbus\3.0.0\ddd99896e9569eaababbe81b35d80e1b91c4ad85\eventbus-3.0.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ddd99896e9569eaababbe81b35d80e1b91c4ad85">
+        <dex dex="D:\breadtour\app\build\intermediates\pre-dexed\debug\eventbus-3.0.0_338198e230e883acd6c9c82ca46ba5fc3096755c.jar" />
+    </item>
+    <item
+        jar="D:\breadtour\app\build\intermediates\exploded-aar\com.jude\rollviewpager\1.2.9\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="9229a89cbb43d66d573e975cc3fdab425bec4372">
+        <dex dex="D:\breadtour\app\build\intermediates\pre-dexed\debug\com.jude-rollviewpager-1.2.9_2c0d7b2f5d69c92d7ac83dec3d213bf04d8ef578.jar" />
+    </item>
+    <item
+        jar="D:\breadtour\app\src\main\libs\SocialSDK_tencentWB_3.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="d89e516ac97dd2e0a009c9515b22621a452024ee">
+        <dex dex="D:\breadtour\app\build\intermediates\pre-dexed\debug\SocialSDK_tencentWB_3_c2b7e33706109942285d138ca90206463046d1ec.jar" />
+    </item>
+    <item
+        jar="D:\breadtour\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="D:\breadtour\app\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_8ca1e2bf3d27c1e8a203a863acd8586b01a36ee6.jar" />
+    </item>
+    <item
+        jar="D:\breadtour\app\build\intermediates\exploded-aar\breadtour\PushSDK\unspecified\jars\libs\com.umeng.message_v2.8.1.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="c6018cc14d2ba552bd251bec213c1d008de96e8c">
+        <dex dex="D:\breadtour\app\build\intermediates\pre-dexed\debug\com.umeng.message_v2.8.1_a8249649c01fb840b3534ea2aea804ac45078f68.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.7\751f548c85fa49f330cecbb1875893f971b33c4e\gson-2.7.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="D:\breadtour\app\build\intermediates\pre-dexed\debug\gson-2.7_2e85dbf641c4a16c73925139bd4ff50ebb0450dd.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="D:\breadtour\app\build\intermediates\pre-dexed\debug\picasso-2.5.2_2428dbd5eabf65ae69bc01abd6e4b72d08e545aa.jar" />
+    </item>
+    <item
+        jar="D:\breadtour\app\build\intermediates\exploded-aar\com.twotoasters.jazzylistview\library-recyclerview\1.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="00f42ab7ae9f8747f735bba2cc61c3fdaf7133be">
+        <dex dex="D:\breadtour\app\build\intermediates\pre-dexed\debug\com.twotoasters.jazzylistview-library-recyclerview-1.2.1_d4829542a239aa95b7626f053ac358cf6d821f40.jar" />
+    </item>
+    <item
+        jar="D:\breadtour\app\build\intermediates\exploded-aar\com.twotoasters.jazzylistview\library\1.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="451e07e95c9f662049ab14915bd1c8114e8acc2b">
+        <dex dex="D:\breadtour\app\build\intermediates\pre-dexed\debug\com.twotoasters.jazzylistview-library-1.2.1_e5be87c35b11964802a6548e8678c5c665314555.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.8.0\5ea7af56cc7c567ed9856d99efb30740e9b17ff\okio-1.8.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="05ea7af56cc7c567ed9856d99efb30740e9b17ff">
+        <dex dex="D:\breadtour\app\build\intermediates\pre-dexed\debug\okio-1.8.0_06f7f952010e37a20e0067d81e65675288b9e24f.jar" />
+    </item>
+    <item
+        jar="D:\breadtour\app\src\main\libs\umeng_social_sdk.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ca647336bd736cb9d3aeb20f4714427bdf100c96">
+        <dex dex="D:\breadtour\app\build\intermediates\pre-dexed\debug\umeng_social_sdk_46bb9cc031826d5ab0f330501b377de224620db2.jar" />
+    </item>
+    <item
+        jar="D:\breadtour\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a7c2aea52e7b621a6bfb31247b698ed8f2700d44">
+        <dex dex="D:\breadtour\app\build\intermediates\pre-dexed\debug\instant-run_466119f4f9d67dd8492c513cac972fa491adf77e.jar" />
+    </item>
+    <item
+        jar="D:\breadtour\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="D:\breadtour\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.4.0_6f51ee0e673360c8e6674e9db24c0ecb6d5d0691.jar" />
+    </item>
+    <item
+        jar="D:\breadtour\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="D:\breadtour\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.4.0_c4bc9784ff970239c4acae37e59cfa2bb0ded596.jar" />
+    </item>
+    <item
+        jar="D:\breadtour\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="D:\breadtour\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_9dcc3f18631726865dfc2f2439254de739a2f2a7.jar" />
+    </item>
+    <item
+        jar="D:\breadtour\app\src\main\libs\locSDK_6.13.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="2cdb37444b41b42e1ce5a8a27e5d3c22e1c57479">
+        <dex dex="D:\breadtour\app\build\intermediates\pre-dexed\debug\locSDK_6.13_5592db103136a8ffa0ad94e4aa3037232f996611.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.immutables\gson\2.2.6\281df0c164eeeb77e2402a6de20a9c139a97c44c\gson-2.2.6.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="281df0c164eeeb77e2402a6de20a9c139a97c44c">
+        <dex dex="D:\breadtour\app\build\intermediates\pre-dexed\debug\gson-2.2.6_4744e3e8c8e855864c3dd05fb3abca6b15d038a2.jar" />
+    </item>
+
+</items>
